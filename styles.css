@@ -784,3 +784,10 @@ kbd {
     scroll-behavior: auto;
   }
 }
+
+.steward {
+  margin-top: 1.25rem;
+  padding-left: 0.9rem;
+  border-left: 3px solid var(--mint);
+  color: var(--cream-dim);
+}
