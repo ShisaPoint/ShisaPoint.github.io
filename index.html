@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShisaPoint — Let your bot see what you see</title>
+  <meta name="description" content="Let your bot see what you see. Frame part of your screen, and your bot follows along with snapshots and points to what matters. A free Windows app.">
+  <link rel="canonical" href="https://shisapoint.com/">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="images/favicon-32.png" sizes="32x32">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <meta name="theme-color" content="#181614">
+  <meta name="color-scheme" content="dark">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ShisaPoint">
+  <meta property="og:title" content="ShisaPoint — Let your bot see what you see">
+  <meta property="og:description" content="Frame part of your screen, and your bot follows along with snapshots and points to what matters. A free Windows app.">
+  <meta property="og:url" content="https://shisapoint.com/">
+  <meta property="og:image" content="https://shisapoint.com/images/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="ShisaPoint logo and name on a dark green rounded frame: Let your bot see what you see.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@shisapoint">
+  <meta name="twitter:title" content="ShisaPoint — Let your bot see what you see">
+  <meta name="twitter:description" content="Frame part of your screen, and your bot follows along with snapshots and points to what matters. A free Windows app.">
+  <meta name="twitter:image" content="https://shisapoint.com/images/og.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top">
+        <img src="images/logo.png" width="40" height="40" alt="">
+        <span>ShisaPoint</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#what"><span class="nav-long">What it does</span><span class="nav-short">What</span></a>
+        <a href="#how"><span class="nav-long">How it works</span><span class="nav-short">How</span></a>
+        <a href="#uses">Uses</a>
+        <a href="#tips">Tips</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-primary header-download" href="https://github.com/ShisaPoint/ShisaPoint/releases/latest/download/ShisaPoint.exe">Download</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <h1>ShisaPoint</h1>
+          <p class="lede">Let your bot see what you see. Frame part of your screen, and your bot follows along with snapshots and points to what matters.</p>
+          <p class="etymology">The name comes from shisa kanko, the Japanese “point and call” safety habit where workers point at something and say it out loud so nothing gets missed. <span lang="ja">指差</span> (shisa) means finger-pointing, and <span lang="ja">示唆</span> (shisa) also means suggestion — which fits an app that points at things and suggests.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://github.com/ShisaPoint/ShisaPoint/releases/latest/download/ShisaPoint.exe">Download for Windows</a>
+            <a class="btn btn-ghost" href="https://github.com/ShisaPoint/ShisaPoint" rel="noopener noreferrer">View the source</a>
+          </div>
+        </div>
+        <figure class="hero-demo">
+          <div class="demo">
+            <video id="demo" poster="images/demo_poster.jpg" autoplay muted loop playsinline preload="metadata" width="540" height="618">
+              <source src="video/demo_clip.mp4" type="video/mp4">
+            </video>
+            <button type="button" class="demo-toggle" id="demo-toggle">Pause</button>
+          </div>
+          <figcaption class="demo-caption">A Follow me session catching typos, with numbered boxes and live suggestions.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="shot-feature">
+      <div class="wrap">
+        <figure class="shot-frame">
+          <img src="images/shot_frame_follow.jpg" width="1280" height="722" alt="The ShisaPoint frame around a document, with numbered markup boxes and a suggestion panel">
+          <figcaption>The see-through frame, numbered markup boxes, and the suggestion panel — all click-through, so you can keep working.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <section id="what">
+      <div class="wrap">
+        <h2>What it does</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Lens</h3>
+            <p>A see-through frame you can move and resize anywhere on your screen. Clicks pass right through it, and it saves a snapshot of what’s inside it for your bot.</p>
+          </article>
+          <article class="card">
+            <h3>Follow me</h3>
+            <p>Start a session and your bot follows along as you work. Sessions run 15 minutes by default, with a countdown on the tab.</p>
+          </article>
+          <article class="card">
+            <h3>Markup</h3>
+            <p>Your bot can draw numbered boxes on your screen around the exact word or spot it means, with matching notes in the suggestion panel, so you don’t have to hunt for what it’s talking about. You can recolor the boxes, and saved sessions keep the boxes and notes with the frames.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="wrap">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li class="step">
+            <h3>Connect your bot</h3>
+            <p>Give your bot the Follow me webhook link from Follow me ▸ Webhook URL… in the app, once. That tells it when you start and stop a session.</p>
+          </li>
+          <li class="step">
+            <h3>Frame what matters</h3>
+            <p>Drag and resize the see-through frame over what you want your bot to see. Clicks pass right through it.</p>
+          </li>
+          <li class="step">
+            <h3>Start Follow me</h3>
+            <p>Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd> or use the menu (15 minutes by default, with a countdown on the tab). Snapshots run every 5 seconds by default, or only when the screen changes. Suggestions show up in the panel with boxes around what they mean. Stop anytime by clicking the tab or pressing <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd> again.</p>
+          </li>
+        </ol>
+        <div class="shot-grid">
+          <figure>
+            <img src="images/shot_followme_menu.png" width="620" height="600" alt="Follow me menu, with Webhook URL and Webhook key shown only as (set)">
+            <figcaption>The Follow me menu, including the webhook settings.</figcaption>
+          </figure>
+          <figure>
+            <img src="images/shot_webhook.png" width="860" height="400" alt="Webhook URL dialog with a placeholder address">
+            <figcaption>Paste your bot’s webhook once. Leave it blank to turn the webhook off.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="uses">
+      <div class="wrap">
+        <h2>What you can use it for</h2>
+        <div class="use-grid">
+          <article class="use">
+            <h3>Show, don’t describe.</h3>
+            <p>Share sketches and art in progress so your bot gets the shape and style without endless back-and-forth text.</p>
+          </article>
+          <article class="use">
+            <h3>Writing help.</h3>
+            <p>Get typing and writing suggestions as you go.</p>
+          </article>
+          <article class="use">
+            <h3>Fix it for you or your family.</h3>
+            <p>Frame an error or a confusing settings screen, and your bot shows exactly which button to click next.</p>
+          </article>
+          <article class="use">
+            <h3>An on-screen tutor.</h3>
+            <p>Learning Blender, Excel, a video editor or a game? Get step-by-step coaching, like a tutor looking over your shoulder.</p>
+          </article>
+          <article class="use">
+            <h3>A second look before you submit.</h3>
+            <p>On a form, spreadsheet, contract or checkout page, it flags a wrong date, a mismatched total or a missed field. No one likes mistakes.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="tips">
+      <div class="wrap">
+        <h2>Tips for faster pickup</h2>
+        <p class="lead-in">Your mileage may vary — assistants can be a bit sluggish at first, almost in a human way. To help it pick up sooner:</p>
+        <ul class="tips-list">
+          <li>Prompt it in your chat first, so it’s already awake when you start Follow me.</li>
+          <li>Or use a voice command to wake it up, if you like talking to your bot.</li>
+          <li>The first suggestions after a quiet stretch can take around 35 seconds; if you used the bot recently, it’s often closer to 15.</li>
+          <li>Typos are usually flagged first.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="privacy">
+      <div class="wrap">
+        <h2>Privacy and Secure mode</h2>
+        <p class="lead-in">Your security matters, so ShisaPoint keeps it simple:</p>
+        <ul class="plain-list">
+          <li>Secure mode encrypts snapshots to your Windows account and wipes them when you quit.</li>
+          <li>Captures pause while password managers and banking windows are in front.</li>
+          <li>Snapshots are saved on your PC in <code>%USERPROFILE%\ShisaPoint\snapshots</code>, and history is trimmed after 15 minutes by default.</li>
+          <li>Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>P</kbd> anytime to pause capture.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <details>
+            <summary>Is it free?</summary>
+            <p>Yes. ShisaPoint is free, and there’s a tip jar if you’d like to support it.</p>
+          </details>
+          <details>
+            <summary>What does it run on?</summary>
+            <p>Windows 10 and 11.</p>
+          </details>
+          <details>
+            <summary>Do I need a bot?</summary>
+            <p>Yes, for the suggestions. ShisaPoint itself only captures the frame and reads the text locally. You need an AI assistant that can read files on your PC and receive a webhook, such as Grok Bot. Without one it still works as a timed region snapshot tool.</p>
+          </details>
+          <details>
+            <summary>Does it send my screen anywhere?</summary>
+            <p>ShisaPoint itself doesn’t upload anything. Snapshots and text reading stay in a folder on your PC (<code>%USERPROFILE%\ShisaPoint\snapshots</code>), history is trimmed (15 minutes by default), and the Follow me start signal carries no screen content. Your bot reads the files when you start a session, so what happens next depends on that bot. Secure mode encrypts snapshots to your Windows account and wipes them when you quit, and the app pauses while password manager or banking windows are in front.</p>
+          </details>
+          <details>
+            <summary>How often does it take a snapshot?</summary>
+            <p>Every 5 seconds by default, or only when the screen changes. You can pick anywhere from 1 to 30 seconds, or set your own.</p>
+          </details>
+          <details>
+            <summary>How do I stop a session?</summary>
+            <p>Click the tab or press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>F</kbd>. Press <kbd>Ctrl</kbd>+<kbd>Alt</kbd>+<kbd>P</kbd> to pause capture.</p>
+          </details>
+          <details>
+            <summary>Who decides how it gets used?</summary>
+            <p>You do. What you do with your bot and ShisaPoint is yours alone. How AI fits into everyday life is up for debate, but the important thing is to use the tools we have today responsibly.</p>
+          </details>
+          <details>
+            <summary>Why a tip jar?</summary>
+            <p>I’m not trying to make a profit on this app. What I do want is an honest app that can be a springboard for others. I want to see good tools that don’t have a price tag (at least not an unjustified one) that would hinder healthy growth in this space. Keeping it running doesn’t cost much, but it isn’t free. I plan to keep it going as long as people use it and the costs stay manageable. That’s the honest truth.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="download">
+      <div class="wrap">
+        <div class="cta-card">
+          <h2>Download and support</h2>
+          <p>Download ShisaPoint for Windows. It’s free, and it runs on Windows 10 and 11.</p>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="https://github.com/ShisaPoint/ShisaPoint/releases/latest/download/ShisaPoint.exe">Download ShisaPoint.exe</a>
+            <a class="btn btn-ghost" href="https://github.com/ShisaPoint/ShisaPoint" rel="noopener noreferrer">GitHub</a>
+          </div>
+          <p class="fineprint">The download is unsigned for now, so Windows SmartScreen may say it’s unrecognized. If you trust the file, choose More info, then Run anyway. Put <code>ShisaPoint.exe</code> in a folder of its own.</p>
+          <div class="cta-links">
+            <p>Questions, bugs, or suggestions: <a href="mailto:support@shisapoint.com">support@shisapoint.com</a></p>
+            <p>Like it? Leave a tip: <a href="https://ko-fi.com/shisapoint" rel="noopener noreferrer">ko-fi.com/shisapoint</a></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="wrap">
+        <h2>Why I built ShisaPoint</h2>
+        <p>I wanted my bot to help with a future project that uses a sketch and art program, so it could get the shape language and style of a product with less back-and-forth text to correct it. I hoped another program on the market already allowed that kind of hands-on interaction, but I couldn’t find one. So we made one. I even used it to help tweak the app icon!</p>
+        <p>My first goal was to show sketches to my bot. It quickly proved useful for typing and writing suggestions too. Depending on your bot and focus, there may be even more ways to use ShisaPoint. For those of us who watched sci-fi growing up and seeing the imaginary framework of AI/Digital assistants, we are on the doorstep of that age.</p>
+        <p>AI will be a part of life going forward. It will be those who use it effectively and correctly who manage its success and reception.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>© 2026 Ryan K Thompson · <a href="https://github.com/ShisaPoint/ShisaPoint/blob/main/LICENSE" rel="noopener noreferrer">MIT</a></p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://github.com/ShisaPoint/ShisaPoint" rel="noopener noreferrer">GitHub</a>
+        <a href="https://x.com/shisapoint" rel="noopener noreferrer">X</a>
+        <a href="https://ko-fi.com/shisapoint" rel="noopener noreferrer">Ko-fi</a>
+        <a href="mailto:support@shisapoint.com">support@shisapoint.com</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script>
+    (function () {
+      var video = document.getElementById("demo");
+      var btn = document.getElementById("demo-toggle");
+      if (!video || !btn) return;
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      function sync() {
+        var paused = video.paused;
+        btn.textContent = paused ? "Play" : "Pause";
+        btn.setAttribute("aria-label", paused ? "Play demo video" : "Pause demo video");
+      }
+      btn.addEventListener("click", function () {
+        if (video.paused) {
+          var play = video.play();
+          if (play && play.catch) play.catch(function () {});
+        } else {
+          video.pause();
+        }
+        sync();
+      });
+      video.addEventListener("play", sync);
+      video.addEventListener("pause", sync);
+      if (reduce) {
+        video.pause();
+      }
+      sync();
+    })();
+  </script>
+</body>
+</html>
